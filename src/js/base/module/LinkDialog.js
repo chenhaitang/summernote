@@ -132,9 +132,9 @@ export default class LinkDialog {
 
       this.ui.onDialogHidden(this.$dialog, () => {
         // detach events
-        $linkText.off('input paste keypress');
-        $linkUrl.off('input paste keypress');
-        $linkBtn.off('click');
+        $linkText.off('');
+        $linkUrl.off('');
+        $linkBtn.off('');
 
         if (deferred.state() === 'pending') {
           deferred.reject();
